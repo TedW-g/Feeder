@@ -6,8 +6,11 @@ public class Main
         System.out.println(g.getCurrentFood());
         double random = (int) (Math.random() * 41 + 10);
         System.out.println(random);
-        g.simulateOneDay(12);
+        g.simulateOneDay(0);
         System.out.println(g.getCurrentFood());
+        Feeder j = new Feeder(2400);
+        System.out.println(j.simulateManyDays(10,5));
+        System.out.println(j.getCurrentFood());
     }
 
 }
