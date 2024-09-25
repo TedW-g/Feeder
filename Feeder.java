@@ -52,5 +52,9 @@ public class Feeder {
         }
         return days;
     }
+    public String toString()
+    {
+        return "Current Food: " + currentFood;
+    }
 
 }
